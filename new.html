@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>雷神充电桩管理平台</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON STYLESHEET -->
+    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- DATATABLE CSS -->
+    <!--<link href="css/style.css" rel="stylesheet">&lt;!&ndash; THEME BASIC CSS &ndash;&gt;-->
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/new.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+<!--nav--B-->
+
+<div class="nav">
+    <div class="nav-left fl">
+        <img src="images/favicon.ico" alt="">
+        <span>雷神充电桩管理平台</span>
+    </div>
+    <div class="nav-right fr">
+        <div class="user clearfix">
+            <span><i style="color: red;">管理员</i>admin</span>
+            <i><a href="#">退出</a></i>
+            <i><a href="#">网站首页</a></i>
+        </div>
+    </div>
+</div>
+<!--nav--E-->
+
+<!--list--B-->
+<div class="list">
+    <div class="list-top">
+        <span></span>
+        管理列表
+    </div>
+    <dl class="leftmenu">
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="01administrator.html" target="rightFrame">管理员管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="02charging_pile.html" target="rightFrame">充电桩管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="03charging_point.html" target="rightFrame">充电点管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="04order.html" target="rightFrame">订单管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="05pile_host.html" target="rightFrame">桩主管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="06jurisdiction.html" target="rightFrame">权限管理</a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="images/leftico01.png" alt="">
+                </span>
+                <a href="07role.html" target="rightFrame">角色管理</a>
+            </div>
+        </dd>
+    </dl>
+
+</div>
+
+<!--list--e-->
+
+
+<div class="content">
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页</a><span>/</span></li>
+            <li><a href="#">管理员管理</a></li>
+        </ul>
+    </div>
+    <div class="bottom clearfix">
+        <img src="images/touxiang.png" alt="">
+        <h2>管理员管理</h2>
+    </div>
+
+    <!-- BEGIN MAIN CONTENT -->
+    <section id="main-content">
+        <!-- BEGIN WRAPPER  -->
+        <section class="wrapper site-min-height">
+            <section class="panel">
+                <!--<header class="panel-heading">-->
+                <!--&lt;!&ndash;<span class="label label-primary">Editable Table</span>&ndash;&gt;-->
+                <!--&lt;!&ndash;<span class="tools pull-right">&ndash;&gt;-->
+                <!--<a href="javascript:;" class="fa fa-chevron-down"></a>-->
+                <!--<a href="javascript:;" class="fa fa-times"></a>-->
+                <!--</span>-->
+                <!--</header>-->
+                <div class="panel-body">
+                    <div class="adv-table editable-table ">
+                        <!--<div class="clearfix">-->
+                        <!--<div class="btn-group">-->
+                        <!--<button id="editable-sample_new" class="btn btn-success green">-->
+                        <!--Add New <i class="fa fa-plus"></i>-->
+                        <!--</button>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group pull-right">-->
+                        <!--<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>-->
+                        <!--</button>-->
+                        <!--<ul class="dropdown-menu pull-right">-->
+                        <!--<li><a href="#">Print</a></li>-->
+                        <!--<li><a href="#">Save as PDF</a></li>-->
+                        <!--<li><a href="#">Export to Excel</a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="space15"></div>-->
+                        <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                            <thead>
+                            <tr>
+                                <th>用户名</th>
+                                <th class="hidden-phone">联系方式</th>
+                                <th class="hidden-phone">管理员身份</th>
+                                <th class="hidden-phone">创建时间</th>
+                                <th class="hidden-phone">上次登录时间</th>
+                                <th class="hidden-phone">是否禁用</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="" href="01administrator_add.html"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="01administrator_compile.html"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone"> 8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名1</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名l</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888 </td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone"> 8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名2</td>
+                                <td class="hidden-phone"> 8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>用户名1</td>
+                                <td class="hidden-phone">8888888</td>
+                                <td class="hidden-phone">商户管理员</td>
+                                <td class="center hidden-phone">2016-12-02</td>
+                                <td class="hidden-phone">none</td>
+                                <td class="hidden-phone">否</td>
+                                <td>
+                                    <a class="edit" href="javascript:;"><span class="label label-success">添加</span></a>
+                                    <a class="delete" href="javascript:;"><span class="label label-danger">删除</span></a>
+                                    <a href="javascript:;"><span class="label label-success">编辑</span></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- END WRAPPER  -->
+    </section>
+    <!-- END MAIN CONTENT -->
+</div>
+
+
+</body>
+
+<!-- BEGIN JS -->
+<script src="js/jquery-1.8.3.min.js" ></script><!-- BASIC JS LIABRARY 1.8.3 -->
+<script src="assets/data-tables/jquery.dataTables.js"></script><!-- DATATABLE JS  -->
+<script src="assets/data-tables/DT_bootstrap.js"></script><!-- DATATABLE JS  -->
+<script src="js/respond.min.js" ></script><!-- RESPOND JS  -->
+<script src="js/editable-table.js" ></script><!-- EDITABLE TABLE JS  -->
+<script >
+    //	     <!-- EDITABLE TABLE FUNCTION  -->
+    jQuery(document).ready(function() {
+        EditableTable.init();
+    });
+</script>
+<!-- END JS -->
+</html>

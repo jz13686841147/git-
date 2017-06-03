@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/addchargepile.css">
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页</a><span>/</span></li>
+            <li><a href="#">桩主管理</a></li>
+        </ul>
+    </div>
+    <div class="bottom clearfix">
+        <h2>桩主信息</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid" style="min-height: 600px">
+
+            <div id="content" class="span10">
+
+                <div class="row-fluid sortable ui-sortable">
+                    <div class="box span12">
+
+                        <div class="box-content">
+                            <form class="form-horizontal" method="post">
+
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput"><span style="color:red">*</span>桩主姓名</label>
+
+                                        <div class="controls">
+                                            <input name="name" required="yes" class="input-xlarge focused" id="name" type="text" value="" onblur="this.value=this.value.trim()">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput"><span style="color:red">*</span>账号</label>
+
+                                        <div class="controls">
+                                            <input name="username" required="yes" class="input-xlarge focused validate[funcCall[is_dup_username]]" id="username" type="text" value="" onblur="this.value=this.value.trim()">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput"><span style="color:red">*</span>密码</label>
+
+                                        <div class="controls">
+                                            <input name="password" required="yes" class="input-xlarge focused validate[minSize[6]]" id="password" type="password" value="" onblur="this.value=this.value.trim()">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">联系电话</label>
+
+                                        <div class="controls">
+                                            <input name="telephone" class="input-xlarge focused" id="telephone" type="text" value="" onblur="this.value=this.value.trim()">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">联系地址</label>
+
+                                        <div class="controls">
+                                            <input name="address" class="input-xlarge focused" id="address" type="text" value="" onblur="this.value=this.value.trim()">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">充电桩个数</label>
+
+                                        <div class="controls">
+                                            <input disabled="" class="input-xlarge focused" id="password" type="text" value="0">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <button class="btn btn-primary add_opus">保存</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--/#content.span10-->
+        </div>
+        <!--/fluid-row-->
+
+        <hr>
+        <footer>
+            <p class="pull-left">© <a href="#" target="_blank">版权所有</a> 2016</p>
+
+            <p class="pull-right">Powered by: 咔酷咔新能源</p>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

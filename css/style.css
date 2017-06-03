@@ -1,0 +1,299 @@
+/*------------------------------------------------------------------
+
+[OLIVE ENTERPRISE]
+
+[Master Stylesheet]
+
+Project:	OLIVE ADMIN
+Version:	1.1
+Last change:	[INITIAL RELEASE]
+Assigned to:	Olive Enterprise (Surat,IN)
+Primary use:	Admin Side Used Template.
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy			:		13px 'Open Sans',sans-serif;
+Headers				:		14px 'Open Sans',sans-serif;
+Input, textarea		:	    14px 'Open Sans',sans-serif;
+
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background   :	 #e5e6e6 (Light Gray)
+Header       :	 #72D0EB (Light Blue)
+Sidebar      :	 #2A3542 (Black)
+Footer       :	 #5B6E84 (dark Gray)
+
+a (standard):	#428BCA (Light blue)
+a (visited,hover,Activated):	#2A3542 (light Black)
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body (Basic CSS)
+2. Signin / Loguin Page CSS
+3. Sidebar
+4. Header
+5. Chart & Graph / Task  / Badge
+6. Timeline / Revenue / User info /Followers /Calender / Weather / Font Awesome
+7. Mailing Pages (Mail inbox / Mail Display)
+8. Error Pages (404/500)
+9. Profile
+10. Table
+11. General Page /  carousel / gritter /form  / Slider / Switch / Tag Input / Date picker / CKEditor / Widget
+12. Search Page
+-------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);*/
+
+
+
+/*------------------------------------------------------------------
+[1. BODY (Basic CSS)]
+*/
+
+
+body {
+	color: #797979;
+	background: #e5e6e6;
+	font-family: 'Open Sans',sans-serif;
+	padding: 0px!important;
+	margin: 0px!important;
+	font-size: 13px;
+}
+
+ul li {
+	list-style: none;
+}
+
+a,a:hover,a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+
+
+
+
+
+/*table*/
+
+/*------------------------------------------------------------------
+[10. Table]
+*/
+
+.table-advance tr td {
+	vertical-align: middle !important;
+}
+
+.no-border {
+	border-bottom: none;
+}
+
+.dataTables_length , .dataTables_filter {
+	padding: 15px;
+}
+
+.dataTables_info {
+	padding: 0 15px;
+}
+
+.dataTables_filter {
+	float: right;
+}
+
+.dataTables_length select {
+	width: 65px;
+	padding: 5px 8px;
+}
+
+.dataTables_length label, .dataTables_filter label {
+	font-weight: 300;
+}
+
+.dataTables_filter label {
+	width: 100%;
+}
+
+.dataTables_filter label input {
+	width: 78%;
+}
+
+.border-top {
+	border-top: 1px solid #ddd;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li {
+	float: left;
+	margin: 0 1px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li.disabled a {
+	color: #c7c7c7;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li a {
+	color: #797979;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li:hover a, .dataTables_paginate.paging_bootstrap.pagination li.active a {
+	color: #fff;
+	background: #3a9fbc;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #2489a6;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination {
+	float: right;
+	margin-top: -5px;
+	margin-bottom: 15px;
+}
+
+.dataTable tr:last-child {
+	border-bottom: 1px solid #ddd;
+}
+
+/*calendar*/
+
+.has-toolbar.fc {
+	margin-top: 50px;
+}
+
+.fc-header-title {
+	display: inline-block;
+	margin-top: -50px;
+	vertical-align: top;
+}
+
+.fc-view {
+	margin-top: -50px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.fc-state-default, .fc-state-default .fc-button-inner {
+	background: #c8c4e2 !important;
+	border-color: #DDDDDD;
+	border-style: none solid;
+	color: #4c4380;
+}
+
+.fc-state-active, .fc-state-active .fc-button-inner,
+.fc-state-hover, .fc-state-hover .fc-button-inner {
+	background: #8175C7 !important;
+	color: #fff !important;
+}
+
+.fc-event-skin {
+	background-color: #65c1db !important;
+	border-color: #65c1db !important;
+	color: #FFFFFF !important;
+}
+
+.fc-grid th {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #F3F3F3 !important;
+}
+
+.fc-header-title h2 {
+	font-size: 20px !important;
+	color: #C8CCD7;
+	font-weight: 300;
+}
+
+.external-event {
+	cursor: move;
+	display: inline-block !important;
+	margin-bottom: 6px !important;
+	margin-right: 6px !important;
+	padding: 8px;
+}
+
+#external-events p input[type="checkbox"] {
+	margin: 0;
+}
+
+.drg-event-title {
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+.fc-content .fc-event {
+	border-radius: 4px;
+	webkit-border-radius: 4px;
+	padding: 4px 6px;
+}
+
+.fc-corner-left {
+	border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+}
+
+.fc-corner-right {
+	border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+}
+
+.drp-rmv {
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+
+/*button*/
+
+.btn-row {
+	margin-bottom: 10px;
+}
+
+/*tabs*/
+
+.tab-head {
+	background: #7087a3;
+	display: inline-block;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.tab-container {
+	margin-top: 10px;
+}
+
+.tab-head .nav-tabs > li > a {
+	border-radius: 0;
+	margin-right: 1px;
+	color: #fff;
+}
+
+.tab-head .nav-tabs > li.active > a, .tab-head .nav-tabs > li > a:hover, .tab-head .nav-tabs > li.active > a:hover, .tab-head .nav-tabs > li.active > a:focus {
+	background-color: #f1f2f7;
+	border-color: #f1f2f7;
+	color: #797979;
+}
+

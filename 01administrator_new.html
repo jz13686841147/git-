@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/site.css">
+    <style>
+        .box-content {
+            padding: 10px;
+            border:1px solid #ddd;
+        }
+
+        .control-group {
+            margin-bottom: 28px;
+        }
+
+        .control-label {
+            display: block;
+            width: 140px;
+            padding-top: 5px;
+            text-align: right;
+        }
+
+        label > span {
+            color: red;
+        }
+
+        .controls {
+            margin-left: 20px;
+            padding-top: 5px;
+        }
+
+        select {
+            width: 220px;
+            border: 1px solid #bbb;
+            height: 28px;
+            line-height: 28px;
+        }
+        a{
+            color: #369bd7;
+        }
+        a:hover {
+            color: green;
+        }
+
+        input {
+            width: 220px;
+            border: 1px solid #bbb;
+            height: 28px;
+            line-height: 28px;
+        }
+        .form-actions {
+
+            padding:17px 20px 18px;
+            padding-left: 160px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            background-color: #f5f5f5;
+            border-top:1px solid #e5e5e5;
+        }
+        button {
+            background: #43a1da;
+            color: #ffffff;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            font-size: 14px;
+            line-height: 21px;
+            padding:4px 10px 4px;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <ul>
+            <li><a href="index.html">首页</a><span>/</span></li>
+            <!--<li><a href="#">管理员管理</a></li>-->
+        </ul>
+    </div>
+    <div class="bottom clearfix">
+        <img src="images/edit.png" alt="">
+        <h2>角色管理</h2>
+    </div>
+    <div class="box-content clearfix">
+        <form action="">
+
+            <div class="control-group clearfix">
+                <label class="control-label fl" for="focusedInput">
+                    <span>*</span>
+                    角色名称
+                </label>
+                <div class="controls fl">
+                    <input name="username" required="yes" type="text" value="">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button>保存</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

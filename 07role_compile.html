@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/充电点管理.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid" style="min-height: 600px">
+        <div id="content" class="span10">
+            <div>
+                <ul class="breadcrumb">
+                    <li>
+                        <!--<a href="#">首页</a> <span class="divider">/</span>-->
+                        <a href="index.html">首页</a> <span class="divider">/</span>
+                    </li>
+                    <li>
+                        <a href="#">None</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-fluid sortable ui-sortable">
+                <div class="box span12">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="icon-edit"></i>角色管理</h2>
+                    </div>
+                    <div class="box-content">
+                        <form class="form-horizontal" id="data_form" enctype="multipart/form-data" method="post" action="/custom/admin/role/change_form">
+                            <input type="hidden" name="current_location" value="None">
+                            <input type="hidden" name="menu_no" value="None">
+
+                            <input type="hidden" name="id" value="2">
+
+                            <fieldset>
+                                <div class="control-group">
+                                    <label class="control-label" for="focusedInput"><span style="color:red">*</span>角色名称</label>
+
+                                    <div class="controls" style="padding-top: 5px;">
+                                        <input required="yes" class="input-xlarge focused validate[funcCall[is_dup_role]]" maxlength="20" id="role" name="name" type="text" onblur="this.value=this.value.trim()" value="商户管理员">
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" id="btn" class="btn btn-primary">保存</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--/#content.span10-->
+    </div>
+    <!--/fluid-row-->
+
+    <hr>
+    <footer>
+        <p class="pull-left">© <a href="#" target="_blank">版权所有</a> 2016</p>
+
+        <p class="pull-right">Powered by: 咔酷咔新能源</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

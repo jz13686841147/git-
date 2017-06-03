@@ -1,0 +1,62 @@
+/*list -- B*/
+
+.list {
+    background: #f0f9fd;
+    min-width: 980px;
+}
+.list-top {
+    background: url("../images/lefttop.gif") repeat-x;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height:40px;
+}
+.list-top span {
+    margin:10px 8px 0px 8px;
+    background: url("../images/leftico.png") no-repeat;
+    width: 20px;
+    height: 21px;
+    float: left;
+}
+.leftmenu {
+    width: 187px;
+}
+.leftmenu dd {
+    background: url("../images/leftmenubg.gif")repeat-x;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+    border-right:1px solid #b7d5df;
+}
+.leftmenu dd .title {
+    cursor: pointer;
+}
+.leftmenu dd .title span {
+    float: left;
+    margin: 0px 8px 0 25px;
+}
+.leftmenu .menuson {
+    display: none;
+}
+.leftmenu .menuson li {
+    cursor: pointer;
+}
+.leftmenu .menuson li cite {
+    display: block;
+    float: left;
+    margin-left: 32px;
+    background: url("../images/list.gif") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+}
+.leftmenu .menuson li a {
+    display: block;
+    color: #000;
+    font-weight: normal;
+    font-size:12px;
+}
+.leftmenu .active {
+    display: block;
+}
+/*list -- E*/
